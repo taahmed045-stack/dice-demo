@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controller</title>
+
+<link rel="stylesheet" href="controller.css">
+<script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🎮 Dice Controller</h1>
+
+<p id="status">Connecting...</p>
+
+<button onclick="roll()">🎲 Roll Dice</button>
+
+<div class="grid">
+<button onclick="send(1)">1</button>
+<button onclick="send(2)">2</button>
+<button onclick="send(3)">3</button>
+<button onclick="send(4)">4</button>
+<button onclick="send(5)">5</button>
+<button onclick="send(6)">6</button>
+</div>
+
+<button class="reset" onclick="resetGame()">Reset</button>
+
+</div>
+
+<script src="controller.js"></script>
+
+</body>
+</html>
